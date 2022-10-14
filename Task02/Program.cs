@@ -12,37 +12,37 @@ Console.Write("Введите дату:" );
 Console.WriteLine("Понедельник");
     }
     
-    if (data == 2)
+    else if (data == 2)
 
     {
         Console.WriteLine("Вторник");
     }
     
-      if (data == 3)
+     else if (data == 3)
 
     {
         Console.WriteLine("Среда");
     }
 
-        if (data == 4)
+     else if (data == 4)
 
     {
         Console.WriteLine("Четверг");
     }
 
-        if (data == 5)
+    else if (data == 5)
 
     {
         Console.WriteLine("Пятница");
     }
 
-        if (data == 6)
+    else if (data == 6)
 
     {
         Console.WriteLine("Суббота");
     }
 
-        if (data == 7)
+      else  if (data == 7)
 
     {
         Console.WriteLine("Воскресенье");
