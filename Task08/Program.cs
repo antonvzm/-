@@ -17,4 +17,4 @@ while (count <= number)
     count++;
 }
 }
-else Console.WriteLine("Введите положительное число");
+else Console.WriteLine("Введите число больше 0");
