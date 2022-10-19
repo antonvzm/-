@@ -28,9 +28,9 @@ Console.Write($"Наибольшая цифра числа {number} равна "
 Console.WriteLine(firstDigit > secondDigit ? firstDigit : secondDigit);
 
 
-int MaxDigit(int num)
-{
-    int firstDigit = num / 10;
-    int secondDigit = num % 10;
-    return firstDigit > secondDigit ? firstDigit : secondDigit;
-}
+//int MaxDigit(int num)
+//{
+//    int firstDigit = num / 10;
+ //   int secondDigit = num % 10;
+  //  return firstDigit > secondDigit ? firstDigit : secondDigit;
+//}
