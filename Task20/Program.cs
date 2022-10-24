@@ -9,7 +9,7 @@ void Squar(int n)
 {
     if (n > 0)
     {
-        for (int i = 0; i <= n; i++)
+        for (int i = 1; i <= n; i++)
         {
             int sqI = i * i;
             Console.Write($"{sqI}, ");
