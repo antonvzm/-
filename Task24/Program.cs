@@ -17,5 +17,4 @@ int SumNumber(int number)
     return sum;
 }
 
-
 Console.WriteLine($"Сумма чисел от 1 до {num} = {SumNumber(num)}");
