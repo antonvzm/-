@@ -26,7 +26,6 @@ void PrintArray(double[] array)
     Console.WriteLine("]");
 }
 
-
 Console.WriteLine("Введите b1: ");
 double b1 = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Введите k1: ");
@@ -37,7 +36,5 @@ Console.WriteLine("Введите k2: ");
 double k2 = Convert.ToDouble(Console.ReadLine());
 
 double[] array = SearchXY(b1, b2, k1, k2);
-
-
 Console.Write($"b1 = {b1}, b2 = {b2}, k1 = {k1}, k2 = {k2} -> ");
 PrintArray(array);
