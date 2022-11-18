@@ -38,8 +38,8 @@ int SummOddIndex(int[] array)
     return summ;
 }
 
-
-
 int[] massiv = CreateMassiv(6, -10, 10);
+
 PrintMassiv(massiv);
+
 Console.WriteLine($" -> {SummOddIndex(massiv)}");

@@ -28,9 +28,6 @@ void PrintMassiv(int[] array)
     Console.Write("]");
 }
 
-int[] massiv = CreateMassiv(5, 100, 999);
-PrintMassiv(massiv);
-
 int SearchEvenNumbers(int[] array)
 {
     int summ = 0;
@@ -41,4 +38,8 @@ int SearchEvenNumbers(int[] array)
     }
     return summ;
 }
+
+int[] massiv = CreateMassiv(5, 100, 999);
+PrintMassiv(massiv);
+
 Console.WriteLine($" -> {SearchEvenNumbers(massiv)}");

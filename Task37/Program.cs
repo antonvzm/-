@@ -28,11 +28,6 @@ void PrintArray(double[] array)
     Console.Write("]");
 }
 
-
-
-double[] array = CreateArrayRndDouble(6, 0, 100);
-PrintArray(array);
-
 double NumberDifference(double[] array)
 {
     double min = array[0];
@@ -47,5 +42,8 @@ double NumberDifference(double[] array)
     double diff = max - min;
     return diff;
 }
+
+double[] array = CreateArrayRndDouble(6, 0, 100);
+PrintArray(array);
 
 Console.Write($" -> {NumberDifference(array)}");
