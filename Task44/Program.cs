@@ -28,8 +28,7 @@ double k2 = Convert.ToDouble(Console.ReadLine());
 // double x = SearchX(b1, b2, k1, k2);
 // double y = SearchY(x, k1, b1);
 
-    double x = (b2 - b1)/(k1-k2);
-    double y = k1 * x + b1;
-   
+double x = (b2 - b1) / (k1 - k2);
+double y = k1 * x + b1;
 
 Console.WriteLine($"b1 = {b1}, {b2} = 2, k1 = {k1}, k2 = {k2} -> ({x} ; {y})");
