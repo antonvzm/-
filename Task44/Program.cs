@@ -4,16 +4,27 @@
 // b1 = 2, k1 = 5, b2 = 4, k2 =
 // 9 -> (-0,5; -0,5)
 
-// double SearchX(double b1, double k1, double b2, double k2)
-// {
-//     double x = (b2 - b1)/(k1-k2);
-//     return x;
-// }
-// double SearchY(double x, double k1, double b1)
-// {
-//      double y = k1 * x + b1;
-//      return y;
-// }
+double[] SearchXY(double b1, double k1, double b2, double k2)
+{
+
+    double x = (b2 - b1) / (k1 - k2);
+    double y = k1 * x + b1;
+    double[] array = new double[2];
+    array[0] = x;
+    array[1] = y;
+    return array;
+}
+
+void PrintArray(double[] array)
+{
+    Console.Write("[");
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (i < array.Length - 1) Console.Write($"{array[i]},");
+        else Console.Write($"{array[i]}");
+    }
+    Console.WriteLine("]");
+}
 
 
 Console.WriteLine("Введите b1: ");
@@ -25,10 +36,8 @@ double b2 = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Введите k2: ");
 double k2 = Convert.ToDouble(Console.ReadLine());
 
-// double x = SearchX(b1, b2, k1, k2);
-// double y = SearchY(x, k1, b1);
+double[] array = SearchXY(b1, b2, k1, k2);
 
-double x = (b2 - b1) / (k1 - k2);
-double y = k1 * x + b1;
 
-Console.WriteLine($"b1 = {b1}, {b2} = 2, k1 = {k1}, k2 = {k2} -> ({x} ; {y})");
+Console.Write($"b1 = {b1}, b2 = {b2}, k1 = {k1}, k2 = {k2} -> ");
+PrintArray(array);
